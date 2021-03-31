@@ -1,3 +1,3 @@
 FROM nginx
-COPY . /home
+COPY . /var/www/html
 EXPOSE 80
