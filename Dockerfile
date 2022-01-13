@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get update -y
 RUN apt-get install -y nginx
 COPY . /var/www/html/
 EXPOSE 80
