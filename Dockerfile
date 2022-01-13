@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN dpkg -y install nginx
+RUN apt-get install -y nginx
 COPY . /var/www/html/
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
